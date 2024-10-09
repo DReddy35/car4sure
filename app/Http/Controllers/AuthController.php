@@ -27,7 +27,7 @@ class AuthController extends Controller
         return response()->json(['message' => 'User registered successfully'], 201);
     }
 
-    public function login(Request $request)
+    public function login_submit(Request $request)
     {
         $request->validate([
             'email' => 'required|string|email',

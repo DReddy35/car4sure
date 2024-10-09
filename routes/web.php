@@ -9,12 +9,17 @@ use App\Http\Controllers\DriverController;
 use App\Http\Controllers\CoverageController;
 use App\Http\Controllers\PolicyholderController;
 use App\Http\Controllers\AuthController;
-
+use Illuminate\Support\Facades\File;
 use Inertia\Inertia;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/{any}', function () {
+    // Serve the React app's index.html file from the public directory
+    return File::get(public_path() . '/index.html');
+})->where('any', '.*');
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -30,7 +35,7 @@ Route::prefix('policies')->group(function () {
 });
 
 Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+// Route::get('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [AuthController::class, 'user']);
     Route::post('logout', [AuthController::class, 'logout']);

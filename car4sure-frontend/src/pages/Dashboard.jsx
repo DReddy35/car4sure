@@ -3,7 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import SubmitButton from "../components/SubmitButton";
 import CreateClaim from '../components/CreateClaim';
 import PolicyTable from '../components/PolicyTable';
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ export default function Example() {
 
     const handleLogout = async () => {
         try {
-          await axios.post('http://127.0.0.1:8000/api/logout', {}, {
+          await axios.post('https://car4sure-green-leaf-3174.fly.dev/api/logout', {}, {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('authToken')}`,
             },

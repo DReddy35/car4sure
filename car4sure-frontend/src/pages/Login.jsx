@@ -1,5 +1,5 @@
 // import { Link, Head, useForm, router } from "@inertiajs/react";
-import React, { useState } from "react";
+import  { useState } from "react";
 // import useForm from "../hooks/useForm";
 import InputField from "../components/InputField";
 import SubmitButton from "../components/SubmitButton";
@@ -7,7 +7,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Login({ setAuth }) {
+export default function Login() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -26,7 +26,7 @@ export default function Login({ setAuth }) {
     if (e)
       e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/login', formData);
+      const response = await axios.post('https://car4sure-green-leaf-3174.fly.dev/api/login', formData);
       localStorage.setItem('authToken', response.data.token);
       // setAuth(true);
       alert('Login Successful');

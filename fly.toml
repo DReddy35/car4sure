@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for car4sure on 2024-10-02T08:58:00+02:00
+# fly.toml app configuration file generated for car4sure-green-leaf-3174 on 2024-10-09T14:17:53+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'car4sure'
+app = 'car4sure-green-leaf-3174'
 primary_region = 'jnb'
 console_command = 'php /var/www/html/artisan tinker'
 
@@ -29,6 +29,6 @@ console_command = 'php /var/www/html/artisan tinker'
   processes = ['app']
 
 [[vm]]
-  memory = '2gb'
+  memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1

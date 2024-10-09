@@ -15,7 +15,7 @@ const PolicyTable = () => {
     useEffect(() => {
         const fetchPolicies = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/policies');
+                const response = await axios.get('https://car4sure-green-leaf-3174.fly.dev/api/policies');
                 setPolicies(response.data);
             } catch (error) {
                 console.error("Error fetching policies", error);
@@ -26,7 +26,7 @@ const PolicyTable = () => {
 
     const handleDownloadPDF = async (policyId) => {
         try {
-            const response = await axios.get(`http://127.0.0.1:8000/api/policies/${policyId}/pdf`, {
+            const response = await axios.get(`https://car4sure-green-leaf-3174.fly.dev/api/policies/${policyId}/pdf`, {
                 responseType: 'blob',
             });
     
@@ -55,7 +55,7 @@ const PolicyTable = () => {
     const handleDelete = async (policyId) => {
         if (confirm("Are you sure you want to delete this policy?")) {
             try {
-                await axios.delete(`http://127.0.0.1:8000/api/policies/${policyId}`);
+                await axios.delete(`https://car4sure-green-leaf-3174.fly.dev/api/policies/${policyId}`);
                 setPolicies(policies.filter(policy => policy.id !== policyId));
             } catch (error) {
                 console.error("Error deleting policy", error);

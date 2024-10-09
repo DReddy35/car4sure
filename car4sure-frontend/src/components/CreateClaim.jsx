@@ -263,14 +263,14 @@ const CreateClaim = ({ selectedPolicy, mode, policy_id }) => {
 
   if (mode === 'edit') {
     // For updating an existing policy
-    response = await axios.put(`http://127.0.0.1:8000/api/policies/${policy_id}`, formData, {
+    response = await axios.put(`https://car4sure-green-leaf-3174.fly.dev/api/policies/${policy_id}`, formData, {
       headers: {
         'Content-Type': 'application/json',
       },
     });
   } else {
     // For creating a new policy
-    response = await axios.post('http://127.0.0.1:8000/api/policies', formData, {
+    response = await axios.post('https://car4sure-green-leaf-3174.fly.dev/api/policies', formData, {
       headers: {
         'Content-Type': 'application/json',
       },

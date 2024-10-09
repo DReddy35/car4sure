@@ -1,5 +1,5 @@
 // import { Link, Head, useForm, router } from "@inertiajs/react";
-import React, { useState } from "react";
+import { useState } from "react";
 // import useForm from "../hooks/useForm";
 import InputField from "../components/InputField";
 import SubmitButton from "../components/SubmitButton";
@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 //import PhoneNumberInput from "@/Components/PhoneNumberInput";
 
 export default function SignUp() {
-    const [isChecked, setIsChecked] = useState(false);
     const [formData, setFormData] = useState({
         email: "",
         name: "",
@@ -82,7 +81,7 @@ export default function SignUp() {
         console.log(formData);
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/register', formData);
+            const response = await axios.post('https://car4sure-green-leaf-3174.fly.dev/api/register', formData);
             localStorage.setItem('authToken', response.data.token);
             // setAuth(true);
             console.log('Login Successful');

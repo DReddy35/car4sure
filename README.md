@@ -20,15 +20,13 @@ _A brief description of the project and its purpose._
    navigate into car4sure-frontend and:
    npm install
    ```
-4. Set up environment variables:
-   - Copy `.env.example` and rename it `.env`.
 
-5. Run database migrations:
+4. Run database migrations:
    ```bash
    php artisan migrate
    ```
 
-6. Start the development server:
+5. Start the development server:
    ```bash
    php artisan serve
 

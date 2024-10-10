@@ -9,29 +9,30 @@ _A brief description of the project and its purpose._
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone [https://github.com/DReddy35/car4sure.git
    ```
-2. Navigate to the project directory:
+2. Install dependencies:
    ```bash
-   cd project-directory
+   composer install
    ```
 3. Install dependencies:
    ```bash
-   composer install
+   navigate into car4sure-frontend and:
    npm install
    ```
 4. Set up environment variables:
    - Copy `.env.example` and rename it `.env`.
-   - Add required environment variables (e.g., database, Twilio credentials).
 
-5. Run database migrations and seeding (if applicable):
+5. Run database migrations:
    ```bash
-   php artisan migrate --seed
+   php artisan migrate
    ```
 
 6. Start the development server:
    ```bash
    php artisan serve
+
+   navigate into car4sure-frontend and:
    npm run dev
    ```
 
@@ -40,6 +41,8 @@ _A brief description of the project and its purpose._
 1. Access the app at `http://localhost:8000`.
 2. Interact with the app as follows:
    - **Login**: Use credentials or sign up.
-   - **Feature 1**: Explanation.
-   - **Feature 2**: Explanation.
+   - **Feature 1**: Create Policy.
+   - **Feature 2**: View all Policies.
+   - - **Feature 3**: Edit Policy.
+     - - **Feature 4**: Delete Policy.
 

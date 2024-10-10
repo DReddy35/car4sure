@@ -38,12 +38,12 @@ _A brief description of the project and its purpose._
 
 ## Usage
 
-1. Access the app at `http://localhost:8000`.
+1. Access the app at `http://localhost:3000`.
 2. Interact with the app as follows:
    - **Login**: Use credentials or sign up.
    - **Feature 1**: Create Policy.
    - **Feature 2**: View all Policies.
-   - - **Feature 3**: Edit Policy.
-     - - **Feature 4**: Delete Policy.
-       -  - - **Feature 5**: Download PDF.
+   - **Feature 3**: Edit Policy.
+   - **Feature 4**: Delete Policy.
+   - **Feature 5**: Download PDF.
 

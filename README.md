@@ -45,4 +45,5 @@ _A brief description of the project and its purpose._
    - **Feature 2**: View all Policies.
    - - **Feature 3**: Edit Policy.
      - - **Feature 4**: Delete Policy.
+       -  - - **Feature 5**: Download PDF.
 

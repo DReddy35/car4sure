@@ -40,7 +40,7 @@ _A brief description of the project and its purpose._
 2. Interact with the app as follows:
    - **Login**: Use credentials or sign up.
    - **Feature 1**: Create Policy.
-   - **Feature 2**: View all Policies.
+   - **Feature 2**: View all Policies. (page sometimes needs to be reloaded to view new policies)
    - **Feature 3**: Edit Policy.
    - **Feature 4**: Delete Policy.
    - **Feature 5**: Download PDF.
